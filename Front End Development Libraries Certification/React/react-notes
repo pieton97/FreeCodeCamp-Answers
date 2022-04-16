@@ -1,7 +1,7 @@
-stateless functional component: 
+stateless, functional component: 
   is any function you write which accepts props and returns JSX
 
-stateless component: 
+stateless (class) component: 
   is a class that extends React.Component but does not use internal state
 
 stateful component:
