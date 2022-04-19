@@ -18,12 +18,14 @@ class MyComponent extends React.Component {
   }
 
   //solution 2
-  //toggleVisibility() {
-  //   if (this.state.visibility){
-  //     this.setState({visibility:false})
-  //   } else {
-  //     this.setState({visibility:true})
-  //   }
+  // toggleVisibility() {
+  //   this.setState(state => {
+  //     if(state.visibility) {
+  //       return {visibility: false}
+  //     } else {
+  //       return {visibility: true}
+  //     }
+  //   })
   // }
 
   // Change code above this line
