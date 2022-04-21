@@ -1,7 +1,7 @@
 //dispatch(action) -> to reducer -> store -> triggers subscribe 
 
 const defaultState = {
-  login: false
+  authenticated: false
 };
 
 //Reducers are responsible for updating state in response to actions
@@ -32,7 +32,7 @@ const logoutUser = () => {
   }
 };
 
-//dispatching action
+//dispatching action against store, takes in action-creator containing action
 store.dispatch(loginUser());
 
 //triggers subscribe if dispatch occurs
