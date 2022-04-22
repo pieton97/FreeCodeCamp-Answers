@@ -4,7 +4,7 @@ const notesReducer = (state = 'Initial State', action) => {
   switch (action.type) {
     // Change code below this line
     case ADD_NOTE:
-      return state = action.text;
+      return action.text;
     // Change code above this line
     default:
       return state;
