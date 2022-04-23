@@ -37,4 +37,3 @@ store.dispatch(loginUser());
 
 //triggers subscribe if dispatch occurs
 store.subscribe( () => console.log('state was updated') );
-
