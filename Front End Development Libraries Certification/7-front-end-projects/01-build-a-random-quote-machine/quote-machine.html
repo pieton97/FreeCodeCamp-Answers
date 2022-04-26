@@ -3,13 +3,18 @@
 <head>
   <title>Document</title>
   <link rel="stylesheet" href="quote.css">
+  <script src="quote.js" defer></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+
 </head>
 <body>
-  <h1>hello there, its been a while</h1>
   <div id="quote-box">
-    <p id="text">When I let go of what I am, I become what I might be.</p>
-    <p id="author">- Lao Tzu</p>
-    <button id="new-quote">New quote</button>
+    <h1>hello there, its been a while</h1>
+    <div class="quote-container">
+      <p id="text"></p>
+      <p id="author"></p>
+    </div>
+    <button id="new-quote" onclick="newQuote()">New quote</button>
 
     <p> 
       <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet</a>
@@ -17,8 +22,5 @@
 
   </div>
   
-  <script src="quote.js"></script>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
-
