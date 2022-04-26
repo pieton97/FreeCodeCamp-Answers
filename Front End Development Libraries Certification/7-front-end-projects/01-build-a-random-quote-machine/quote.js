@@ -55,18 +55,19 @@ window.onload = newQuote;
 const quoteText = document.getElementById("text")
 const authorText = document.getElementById("author")
 
+let prevRandNum = -1;
+
 function newQuote() {
-  console.log('ehlllo')
-
-  // let prevRandNum;
-  // let curRandNum = randomIndex();
-  // while (curRandNum == prevRandNum) {
-  //   prevRandNum = curRandNum
-  // }
+  console.log('button was clicked')
   
-  let randIndex = randomIndex();
+  //this is to prevent duplicate quotes
+  let curRandNum = randomIndex();
+  while (prevRandNum == curRandNum) {
+    curRandNum = randomIndex();
+  };
+  prevRandNum = curRandNum
 
-  quoteText.innerText = quoteStorage[randIndex].quote;
-  authorText.innerText = quoteStorage[randIndex].author;
+  quoteText.innerText = quoteStorage[curRandNum].quote;
+  authorText.innerText = quoteStorage[curRandNum].author;
 }
 
