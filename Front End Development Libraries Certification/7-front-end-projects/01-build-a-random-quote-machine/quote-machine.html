@@ -9,16 +9,21 @@
 </head>
 <body>
   <div id="quote-box">
-    <h1>hello there, its been a while</h1>
-    <div class="quote-container">
-      <p id="text"></p>
-      <p id="author"></p>
+    <div class="quote-text-container">
+      <p id="text" class="quote-text"></p>
+      <p id="author" class="author-text"></p>
     </div>
-    <button id="new-quote" onclick="newQuote()">New quote</button>
 
-    <p> 
-      <a href="https://twitter.com/intent/tweet?url=" target="_blank" id="tweet-quote">Tweet</a>
-    </p>
+    <div class="btn-tweet-container">
+      <p> 
+        <a href="https://twitter.com/intent/tweet?url=" target="_blank" id="tweet-quote">
+          Tweet
+        </a>
+      </p>
+      <button id="new-quote" class="quote-btn" onclick="newQuote()">
+        New quote
+      </button>
+    </div>
   </div>
   
 </body>
