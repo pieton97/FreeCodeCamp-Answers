@@ -48,12 +48,14 @@ const quoteStorage = [
 // random index of quoteStorage
 const quoteStorageLength = quoteStorage.length;
 let randomIndex = () => Math.floor(Math.random() * quoteStorageLength)
-console.log(randomIndex, "ranbdo");
+console.log(randomIndex(), "ranbdo");
 
 window.onload = newQuote;
 
+//grabbing the mutable elements
 const quoteText = document.getElementById("text")
 const authorText = document.getElementById("author")
+const tweetLink = document.querySelector("#tweet-quote")
 
 let prevRandNum = -1;
 
@@ -69,5 +71,5 @@ function newQuote() {
 
   quoteText.innerText = quoteStorage[curRandNum].quote;
   authorText.innerText = quoteStorage[curRandNum].author;
+  tweetLink.href = `https://twitter.com/intent/tweet?url=${quoteText.innerText} ${authorText.innerText}`;
 }
-
