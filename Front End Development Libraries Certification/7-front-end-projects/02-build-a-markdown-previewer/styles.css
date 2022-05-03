@@ -1,4 +1,31 @@
 body {
-  background-color: bisque;
+  background-color: antiquewhite;
+}
+
+.h1-title {
+  height: 60px;
+}
+
+#editor {
+  width: 80%;
+  height: 40vh;
+  overflow-y: scroll;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
+  margin-top: 20px;
+  padding: 14px;
+}
+
+.aa {
+  width: 80%;
+  margin: 20px 20px;
+  padding: 30px 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
+}
+
+pre {
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.767);
   color: white;
+  border-radius: 3px;
 }
