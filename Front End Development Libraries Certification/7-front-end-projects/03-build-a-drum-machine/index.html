@@ -13,29 +13,62 @@
    crossorigin="anonymous"
   />
 
+  <!-- document styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- document script -->
+  <script src="index.js" defer></script>
+
   <title>Drum machine</title>
  </head>
  <body>
-  <div id="drum-machine" class="container-fluid">
-    <div id="display"></div>
+  <div id="drum-machine" class="container">
+    <div id="display">Musical beats</div>
 
-    <div class="drum-pad" id="">Q</div>
-    <div class="drum-pad" id="">W</div>
-    <div class="drum-pad" id="">E</div>
-    <div class="drum-pad" id="">A</div>
-    <div class="drum-pad" id="">S</div>
-    <div class="drum-pad" id="">D</div>
-    <div class="drum-pad" id="">Z</div>
-    <div class="drum-pad" id="">X</div>
-    <div class="drum-pad" id="">C</div>
+    <button class="drum-pad btn btn-success" id="">
+      Q
+      <audio class="clip" id="Q" src="https://free-loops.com/data/mp3/c9/ef/4c2c5a9bc4515911bd8a7a6fcce9.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      W
+      <audio class="clip" id="W" src="https://free-loops.com/data/mp3/13/04/3f92bf1c02214fbec880b72bfe6f.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      E
+      <audio class="clip" id="E" src="https://free-loops.com/data/mp3/66/06/f2b9f4eb46bc39644689705bce2a.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      A
+      <audio class="clip" id="A" src="https://free-loops.com/data/mp3/92/94/62895b3fdf121e7cc3b3d7fd8317.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      S
+      <audio class="clip" id="S" src="https://free-loops.com/data/mp3/6c/63/d2d1ba3cd2fb77fded8bcf5c93d3.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      D
+      <audio class="clip" id="D" src="https://free-loops.com/data/mp3/5b/9e/9d7de73097fb51007ded66c009ae.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      Z
+      <audio class="clip" id="Z" src="https://free-loops.com/data/mp3/d1/ad/344e07276acaf9fb7d6cb9ddc0a5.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      X
+      <audio class="clip" id="X" src="https://free-loops.com/data/mp3/19/91/3e43da6484d3f3a39b27fe23a6a8.mp3"></audio>
+    </button>
+    <button class="drum-pad btn btn-success" id="">
+      C
+      <audio class="clip" id="C" src="https://free-loops.com/data/mp3/12/71/2213f081fd811e304423f283850b.mp3"></audio>
+    </button>
 
   </div>
-
 
   <script
    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
    crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
  </body>
 </html>
