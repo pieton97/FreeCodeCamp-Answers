@@ -15,35 +15,83 @@
     <title>My JavaScript Calculator</title>
   </head>
   <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center mt-5 p-5" id="main-container">
 
-      <h1 class="my-2" id="top-display">previous math</h1>
-      <h1 class="my-5" id="display">main display</h1>
+      <h2 class="my-2 py-1" id="top-display">previous math</h2>
+      <h1 class="my-3 py-1" id="display">main display</h1>
 
-      <button id="clear" onclick="clearCalc()">AC</button>
+      <div class="row py-1">
+        <div class="col d-grid mx-auto">
+          <button id="clear" class="btn btn-warning" onclick="clearCalc()">AC</button>
+        </div>
+      </div>
 
       <div class="numbers">
-        <button id="zero">0</button>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="decimal">.</button>
+        <div class="row py-1">
+          <div class="col d-grid mx-auto">
+            <button id="one" class="btn btn-primary">1</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="two" class="btn btn-primary">2</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="three" class="btn btn-primary">3</button>
+          </div>
+        </div>
+        <div class="row py-1">
+          <div class="col d-grid mx-auto">
+            <button id="four" class="btn btn-primary">4</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="five" class="btn btn-primary">5</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="six" class="btn btn-primary">6</button>
+          </div>
+        </div>
+        <div class="row py-1">
+          <div class="col d-grid mx-auto">
+            <button id="seven" class="btn btn-primary">7</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="eight" class="btn btn-primary">8</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="nine" class="btn btn-primary">9</button>
+          </div>
+        </div>
+        <div class="row py-1">
+          <div class="col-8 d-grid mx-auto">
+            <button id="zero" class="btn btn-primary">0</button>
+          </div>
+          <div class="col-4 d-grid mx-auto">
+            <button id="decimal" class="btn btn-primary">.</button>
+          </div>
+        </div>
       </div>
       
       <div class="operations">
-        <button id="add">+</button>
-        <button id="subtract">-</button>
-        <button id="multiply">x</button>
-        <button id="divide">/</button>
+        <div class="row py-1">
+          <div class="col d-grid mx-auto">
+            <button id="add" class="btn btn-secondary">+</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="subtract" class="btn btn-secondary">-</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="multiply" class="btn btn-secondary">x</button>
+          </div>
+          <div class="col d-grid mx-auto">
+            <button id="divide" class="btn btn-secondary">/</button>
+          </div>
+        </div>
       </div>
 
-      <button id="equals">=</button>
+      <div class="row py-1">
+        <div class="col d-grid mx-auto">
+          <button id="equals" class="btn btn-success">=</button>
+        </div>
+      </div>
 
     </div>
 

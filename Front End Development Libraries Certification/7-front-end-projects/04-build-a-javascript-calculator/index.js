@@ -34,7 +34,7 @@ numbers.addEventListener('click', e => {
       numStore1 += e.target.innerText;
     }
   } else if (secondState == true && flagStore2 == false) {
-    if (numStore2 === 0) {
+    if (numStore2 === '0') {
       numStore2 = e.target.innerText;
     } else if (numStore2 === '-0') {
       //this removes the first 0 from a negative number. eg: (-04 ===> -4)
@@ -64,9 +64,9 @@ operations.addEventListener('click', e => {
     //clicking operation for first time, moves us onto the second number storage
     secondState = true;
 
-      //this if statement initates if an operator is pressed after an = sign
+      //if statement initates if an operator is pressed after an = sign
       if (numStore1 === '0') {
-        // console.log('yellow');
+        // console.log('yellowwwww');
         numStore1 = previousAns;
       }
 
@@ -76,7 +76,6 @@ operations.addEventListener('click', e => {
     display.innerText = 0;
   } else if (secondState == true && display.innerText == 0) {
     //clicking operation after the first time, but want to change to diff operation
-    //
     if (lastOperation != '-' && e.target.innerText == '-') {
       console.log('allleoww');
       numStore2 = '-' + numStore2;
@@ -123,7 +122,7 @@ const calculate = (operator, num1, num2) => {
   return doOperation[operator](num1, num2);
 };
 
-var doOperation = {
+let doOperation = {
   '+': function (x, y) { return x + y },
   '-': function (x, y) { return x - y },
   'x': function (x, y) { return x * y },
