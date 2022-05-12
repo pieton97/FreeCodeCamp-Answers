@@ -1,10 +1,7 @@
-body {
-  background-color: #e2e7ba;
-}
-
 #main-container {
   width: 500px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.493);
+  background-color: #e2e7ba;
 }
 h1, h2 {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
