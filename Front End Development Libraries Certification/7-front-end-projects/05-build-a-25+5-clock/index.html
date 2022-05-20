@@ -20,19 +20,19 @@
   <title>My Pomodoro Timer</title>
  </head>
  <body>
-  <div class="container">
-   <h1>Hello again, :^), welcome to my Pomodoro Timer</h1>
+  <div class="container my-5">
+   <h1>Hello friend, welcome to my Pomodoro Timer</h1>
 
    <div class="row" id="set-timer">
     <div class="col-6">
      <div id="break-label">Break Length</div>
-     <div id="break-length">starting... 5</div>
+     <div id="break-length">5</div>
      <button id="break-decrement">break-decrement</button>
      <button id="break-increment">break-increment</button>
     </div>
     <div class="col-6">
-     <div id="session-label">session-label</div>
-     <div id="session-length">starting... 25</div>
+     <div id="session-label">Session-label</div>
+     <div id="session-length">25</div>
      <button id="session-decrement">session-decrement</button>
      <button id="session-increment">session-increment</button>
     </div>
@@ -41,10 +41,14 @@
    <div id="timer-label">Session</div>
    <div id="time-left">25:00</div>
    
-   <button id="start_stop" onclick="adjustTimer()">start_stop</button>
+   <button id="start_stop">start_stop</button>
    <button id="reset" onclick="resetTimer()">reset</button>
 
-   <audio src=""></audio>
+   <audio id="beep" src="https://free-loops.com/data/mp3/a2/55/47c517c54278eab41d7840573668.mp3"></audio>
+
+   <br><br>
+   <p>Just basic styles for now. everything works though :)</p>
+
   </div>
 
   <!-- Bootstrap Bundle with Popper -->

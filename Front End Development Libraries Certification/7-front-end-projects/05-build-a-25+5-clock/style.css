@@ -1,3 +1,9 @@
 body {
   background-color: #e2e7ba;
 }
+
+.container {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.363);
+  padding: 14px;
+  padding-left: 40px;
+}
